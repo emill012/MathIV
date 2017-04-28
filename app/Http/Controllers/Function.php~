@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class 'Function' extends Controller
+{
+	     function index(){
+    	  $result = <<<EOT
+    	  <h1>Lets Do Math!</h1>
+    	  <h3>Enter the items below to display the desired result in the browser</h3>
+        /'function' Displays This page<br>
+        /'function'/sqrt/{x}<br>
+        /'function'/log/{x}<br>
+EOT;
+        return $result;
+        }
+        
+        function squareRoot($x){
+    	  $message = sqrt($x);
+        return "Square Root of $x = $message";
+        /*->where = ('x','[-\+]?[0-9]+');*/
+        }
+        
+        function logX($x){
+        $message = log10($x);
+        return "The log of x = $message";
+        /*->where = ('x','[-\+]?[0-9]+');*/
+		  }
+    
+}
