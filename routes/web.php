@@ -29,6 +29,7 @@ Route::get('/func/log/{x}', 'Func@logX');
 
 Route::get('/courses', 'Schedule@index');
 Route::get('/table/{course}', 'Schedule@table');
+Route::get('/{semester}/{course}', 'Schedule@classSchedule');
 
 /*
 Working Closures
